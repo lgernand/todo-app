@@ -1,15 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import './listItem/ListItem';
+import './data/todolist';
+import ListItem from './listItem/ListItem';
+import todoList from './data/todolist';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-      </header>
+      <ListItem 
+        items={todoList}
+      />
     </div>
   );
 }
