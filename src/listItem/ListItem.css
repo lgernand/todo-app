@@ -1,0 +1,6 @@
+.listItemContent {
+    border: solid 10px darkblue;
+    border-radius: 30px;
+    width: 240px;
+    margin: auto;
+}

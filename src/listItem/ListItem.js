@@ -1,4 +1,5 @@
 import React from "react";
+import './ListItem.css'
 
 function ListItem(props) {
     const items = props.items;
@@ -11,6 +12,9 @@ function ListItem(props) {
                  key={item.id}>
                     <p>{item.task}</p> 
                     <p>{item.estimatedTime}</p>
+                    <button className="deleteButton"
+                        onClick={props.handleDeleteItem}
+                    >delete</button>
                 </div>  
             )}
         </div>

@@ -24,10 +24,14 @@ function App() {
     setList([...list, {id: list.length, task: newItem, estimatedTime: newTime}]);
   }
 
+  function handleDeleteItem(event) {
+
+  }
 
   return (
     <div className="App">
       <ListItem 
+        handleDeleteItem={handleDeleteItem}
         items={list}
       />
       <NewListItem 
