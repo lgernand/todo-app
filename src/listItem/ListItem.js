@@ -6,10 +6,13 @@ function ListItem(props) {
     return (
         <div>
             {items.map(item =>  
-            <div className="listItemContent">
-                <p>{item.task}</p> 
-                <p>{item.estimatedTime}</p>
-            </div>  )}
+                <div
+                 className="listItemContent"
+                 key={item.id}>
+                    <p>{item.task}</p> 
+                    <p>{item.estimatedTime}</p>
+                </div>  
+            )}
         </div>
     );
 }
