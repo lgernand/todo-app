@@ -30,14 +30,14 @@ function App() {
 
   return (
     <div className="App">
-      <ListItem 
-        handleDeleteItem={handleDeleteItem}
-        items={list}
-      />
       <NewListItem 
         handleAddItem={handleAddItem}
         handleUpdateNewItem={handleUpdateNewItem}
         handleUpdateNewTime={handleUpdateNewTime}
+      />
+      <ListItem 
+        handleDeleteItem={handleDeleteItem}
+        items={list}
       />
     </div>
   );

@@ -1,8 +1,9 @@
 import React from "react";
+import "./NewListItem.css"
 
 function NewListItem(props) {
     return(
-        <div>
+        <div className="NewListItem">
             <input type="text" placeholder="enter your new task" 
                 onChange={props.handleUpdateNewItem}
             ></input>
