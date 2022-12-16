@@ -1,6 +1,14 @@
 .listItemContent {
-    border: solid 10px darkblue;
-    border-radius: 30px;
-    width: 240px;
+    border: solid 1px #8899A6;
+    width: 500px;
     margin: auto;
+}
+
+.deleteButton {
+    cursor: pointer;
+    position: absolute;
+    color: #8899A6;
+    margin-top: -80px;
+    margin-left: 20px;
+    font-weight: 100;
 }

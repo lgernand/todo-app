@@ -12,9 +12,9 @@ function ListItem(props) {
                  key={item.id}>
                     <p>{item.task}</p> 
                     <p>{item.estimatedTime}</p>
-                    <button className="deleteButton"
+                    <div className="deleteButton"
                         onClick={props.handleDeleteItem}
-                    >delete</button>
+                    >X</div>
                 </div>  
             )}
         </div>

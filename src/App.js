@@ -10,7 +10,7 @@ function App() {
 
   const [newItem, setNewItem] = React.useState("");
   const [newTime, setNewTime] = React.useState("");
-  const [list, setList] = React.useState(todoList);
+  const [list, setList] = React.useState(todoList.reverse());
 
   function handleUpdateNewItem(event) {
     setNewItem(event.target.value);
@@ -21,7 +21,7 @@ function App() {
   }
 
   function handleAddItem() {
-    setList([...list, {id: list.length, task: newItem, estimatedTime: newTime}]);
+    setList([{id: list.length, task: newItem, estimatedTime: newTime}, ...list]);
   }
 
   function handleDeleteItem(event) {
