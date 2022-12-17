@@ -25,7 +25,7 @@ function App() {
   }
 
   function handleDeleteItem(event) {
-
+      setList();
   }
 
   return (
