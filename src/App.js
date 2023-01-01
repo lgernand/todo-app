@@ -24,8 +24,14 @@ function App() {
     setList([{id: list.length, task: newItem, estimatedTime: newTime}, ...list]);
   }
 
-  function handleDeleteItem(event) {
-      setList();
+  function handleDeleteItem(event, key) {
+    var tempArray = list;
+    for (var i = tempArray.length - 1; i >= 0; --i) {
+      if (tempArray[i].id === key) {
+          tempArray.splice(i,1);
+      }
+    }
+    setList([...tempArray]);
   }
 
   return (

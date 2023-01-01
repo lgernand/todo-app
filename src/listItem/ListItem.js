@@ -13,7 +13,7 @@ function ListItem(props) {
                     <p>{item.task}</p> 
                     <p>{item.estimatedTime}</p>
                     <div className="deleteButton"
-                        onClick={props.handleDeleteItem}
+                        onClick={event => {props.handleDeleteItem(event, item.id)}}
                     >X</div>
                 </div>  
             )}
