@@ -21,6 +21,9 @@ function App() {
   }
 
   function handleAddItem() {
+    if (newItem === '' || newTime === '') {
+      return
+    }
     setList([{id: list.length, task: newItem, estimatedTime: newTime}, ...list]);
     setNewItem('');
     setNewTime('');
