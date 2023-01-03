@@ -22,6 +22,8 @@ function App() {
 
   function handleAddItem() {
     setList([{id: list.length, task: newItem, estimatedTime: newTime}, ...list]);
+    setNewItem('');
+    setNewTime('');
   }
 
   function handleDeleteItem(event, key) {
@@ -37,6 +39,8 @@ function App() {
   return (
     <div className="App">
       <NewListItem 
+        newItem={newItem}
+        newTime={newTime}
         handleAddItem={handleAddItem}
         handleUpdateNewItem={handleUpdateNewItem}
         handleUpdateNewTime={handleUpdateNewTime}
